@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional massage therapy in Leigh.">
+    <meta name="keywords" content="massage Leigh, massage therapy Leigh, body balance Leigh, therapeutic massage">
+    <meta name="author" content="Paulina Body Balance">
+
+    <title>PaulinaBodyBalance</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+     rel="stylesheet">
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    body {
+      background-color: #B0A695;
+      font-family: montserrat, sans-serif;
+    }
+  
+    .hero {
+      animation: fadeIn 1s ease-in;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+  
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @media (max-width: 992px) {
+      .navbar-nav {
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+      }
+  
+      .d-flex.ms-auto {
+        margin-top: 0.5rem;
+        gap: 0.5rem;
+      }
+  
+    }
+  
+    .container-fluid {
+      background-color: #776B5D;
+      letter-spacing: 0.5px;
+      padding-right: 20px;
+      padding-left: 10px;
+    }
+  
+    .navbar {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: solid black 0.5px;
+       background-color: #776B5D;
+    }
+  
+    .navbar-nav {
+      gap: 20px;
+      font-weight: 300;
+    }
+  
+    .navbar-toggler {
+      border: 1px black solid;
+    }
+  
+    .navbar-brand {
+      font-weight: 300;
+    }
+  
+  
+  
+    .lead {
+      font-weight: 200;
+    }
+  
+    .hero {
+      padding-top: 45px;
+    }
+  
+  
+    .paulinkaguasha {
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+  
+  
+    #ourservices {
+      text-align: center;
+      font-weight: 500;
+    }
+  
+    .carousel-caption {
+      text-align: center;
+      font-size: 20px;
+  
+    }
+  
+    .carousel-caption {
+      bottom: 5vw;
+      padding: 2vw;
+      left: 10%;
+      right: 10%;
+    }
+  
+    @media (max-width: 780px) {
+  
+      .carousel-caption p {
+        font-size: 0.8rem;
+      }
+    }
+  
+    .carousel-item img {
+      height: 300px;
+      object-fit: cover;
+    }
+  
+    @media (min-width: 850px) {
+      .carousel-item img {
+        height: 600px;
+      }
+    }
+  
+    #reviews {
+      text-align: center;
+    }
+  
+  
+  
+    .custom-review-card {
+      border-radius: 15px;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #776B5D;
+      border: solid black 1px;
+    }
+  
+  
+  
+    .footer {
+      background-color: #776B5D;
+      color: #000000;
+      font-family: montserrat;
+      border-top: #000000 solid 0.5px;
+    }
+  
+    .footer small {
+      font-weight: 300;
+    }
+  
+    .page {
+      overflow-x: hidden;
+    }
+  
+    #floatingBookBtn {
+      position: fixed;
+      bottom: 7px;
+      right: 15px;
+      z-index: 1050;
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: 14px;
+      display: none;
+      background-color: #776B5D;
+      border: solid black 1.5px;
+    }
+  
+  
+    @media (max-width: 992px) {
+      #floatingBookBtn {
+        display: block;
+      }
+    }
+
+  .cookie-banner {
+  position: fixed;
+  bottom: 7px;
+  left: 20px;
+  z-index: 9999;
+
+  max-width: 180px;
+
+  background-color: #776B5D;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+
+  transition: all 0.5s ease;
+}
+
+
+.cookie-banner.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+  </style>
+  
+  
+    </head>
+
+ 
+
+  <body>
+ 
+    
+<div class="page">
+<section id="navbar">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-5" href="./index.html"><img src="./zdjecia/Screenshot 2026-04-01 at 22.45.16.png" alt="Body Balance square logo gold on the black background" loading="lazy"
+         height="50px"> BodyBalance
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="./pricelist.html">Price List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./policies.html">Policies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./contact.html">Contact</a>
+          </li>
+        </ul>
+
+
+        <div class="d-flex ms-auto">
+          <a href="https://www.facebook.com/share/1DF5J6XFyu/?mibextid=wwXIfr" class="nav-link px-2"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+          <a href="https://www.instagram.com/paulina.bodybalance?igsh=MXdjOXh3aTJ5dHlodw==" class="nav-link px-2"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg></a>
+          <a href="https://www.youtube.com/@PaulinaBodyBalance" class="nav-link px-2"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+            </svg></a>
+          <a href="https://www.sumupbookings.com/paulina-body-balance?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAQ_i-JleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadK6RB9rTRmH2lZrc0oTzoQ2_6StHvW2rk5gg-SJkxP5Drdole4mrzvIxY-vA_aem_P4KE82sFqJwKkHU8pSGgXg"
+            class="btn btn-outline-dark btn-sm px-3 ms-lg-2 ms-auto">
+            Book an appointment
+          </a>
+
+        </div>
+
+        <br>
+
+      </div>
+    </div>
+  </nav>
+
+</section>
+
+<section id="paulina" class="hero">
+
+  <div class="container mt-4">
+    <div class="row flex-lg-row-reverse align-items-center g-4 py-2">
+      <div class="text-center col-sm-8 col-lg-6"> <img src="./zdjecia/IMG_4281.jpg" alt="Woman receiving facial massage with gua sha stone and roller in a relaxed spa setting" loading="lazy"
+          class="paulinkaguasha d-block mx-xl-auto img-fluid" width="600">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 text-body-emphasis lh-1">Welcome to BodyBalance.</h1>
+        <p class="lead">My name is Paulina, licensed massage therapist. I am dedicated to helping your body feel better,
+          move better, look better and live better.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="ourservices" class="services">
+
+  <hr>
+  <h2>Services</h2>
+  <br>
+
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./zdjecia/madero.jpg" alt="Massage therapist holding a wooden massage tool in a calm studio setting" loading="lazy" class="d-block mx-auto rounded-4" style="width:100%">
+          <div class="carousel-caption">
+            <p>Therapeutic massage, maderotherapy, bamboo therapy, and aromatherapy – a holistic approach designed to
+              restore balance,
+              relieve tension, and support your body’s natural healing.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./zdjecia/kobido.jpg" alt="Close-up of a woman receiving facial massage with wooden tools to stimulate circulation and relax facial muscles" loading="lazy" class="d-block mx-auto rounded-4" style="width:90%">
+          <div class="carousel-caption">
+            <p>Kobido and Balinese facial massage – a natural way to lift, tone, and rejuvenate your skin while deeply
+              relaxing facial
+              tension.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./zdjecia/book.jpg" alt="massage therapist holding notebook" loading="lazy" class="d-block mx-auto rounded-4" style="width:90%">
+          <div class="carousel-caption">
+            <p>Don’t hesitate to book your appointment and take a well-deserved moment for yourself.
+              Advance booking is required to secure your session</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="reviews">
+
+  <hr>
+  <h2>Google Reviews</h2>
+  <br>
+  <div class="container">
+    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="card custom-review-card text-light p-4 text-center mx-auto" style="max-width: 600px">
+            <p class="mb-0">"I had been struggling with back pain, and after the session, the pain was completely gone.
+              Without a doubt, it was the best massage I’ve ever had. Paulina is highly experienced, professional, and
+              creates a truly
+              unique and soothing experience that I absolutely recommend."</p>
+            <div class="text-warning mt-2">★★★★★</div>
+            <small class="mb-0">- Marzia Di Mauro</small>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card custom-review-card text-light p-4 text-center mx-auto" style="max-width: 600px">
+            <p class="mb-0">"The best massage I’ve had in a long time! Paulina knows exactly how to release tension and
+              make you feel at ease. I
+              always leave feeling lighter and stress-free. Plus her space is such a vibe, cosy and feels super clean!
+              Highly
+              recommend"</p>
+            <div class="text-warning mt-2">★★★★★</div>
+            <small class="mb-0">- Agata Sliwa</small>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card custom-review-card text-light p-4 text-center mx-auto" style="max-width: 600px">
+            <p class="mb-0">"I had such a great experience during my massage. The therapist was super attentive and
+              really knew how to target all the
+              right spots. I left feeling so much lighter and less tense. The whole vibe was peaceful, and it felt like
+              a much-needed
+              escape. Highly recommend Paulina!"</p>
+            <div class="text-warning mt-2">★★★★★</div>
+            <small class="mb-0">- Kim Jennifer</small>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card custom-review-card text-light p-4 text-center mx-auto" style="max-width: 600px">
+            <p class="mb-0">"Paulina is very pleasant, professional and knowledgeable- she offers great personalized
+              advice tailored to individual
+              needs. The massage itself was excellent, with relaxing music and a calm atmosphere that made the whole
+              experience even
+              better. Highly recommend!"</p>
+            <div class="text-warning mt-2">★★★★★</div>
+            <small class="mb-0">- Marta Kielanowicz</small>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card custom-review-card text-light p-4 text-center mx-auto" style="max-width: 600px">
+            <p class="mb-0">"She really knows what she is doing and its clear she is passionate about helping people.
+              I left feeling like a new person.
+              Highly recommended!"</p>
+            <div class="text-warning mt-2">★★★★★</div>
+            <small class="mb-0">- Stuart Ramsay</small>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+  
+
+</section>
+
+
+<section class="py-5" id="location">
+  <hr>
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2>Find Us</h2>
+      <p>Your moment of relaxation starts here</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Map -->
+      <div class="col-lg-6">
+        <iframe src="https://www.google.com/maps?q=12 Tennyson Ave, Leigh WN7 5LG&output=embed" width="100%"
+          height="100%" style="border:0; border-radius:10px; min-height:300px;" loading="lazy" title="Location map">
+        </iframe>
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center">
+
+        <p>
+          <a>
+            📍 12 Tennyson Ave, Leigh WN7 5LG
+          </a>
+
+        </p>
+
+        <p>
+          Easy to find, with convenient car park. Please note that visits are by appointment only.
+        </p>
+
+        <a href="https://maps.google.com/?q=12+Tennyson+Ave+Leigh" class="btn btn-outline-dark btn-sm">
+          Open in Google Maps
+        </a>
+
+        <h5 class="mt-4">🕒 Opening Hours</h5>
+        <ul class="list-unstyled">
+          <li>Monday – Friday: 5:00 PM – 9:00 PM</li>
+          <li>Saturday: 10:00 AM – 8:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="row mt-3 g-3">
+      <div class="col-6">
+        <img src="./zdjecia/paulinafotka Large.jpeg" alt="A female massage therapist with straight, shoulder-length brown hair sits facing the camera in a softly lit, dark treatment room. She wears a fitted black short-sleeve top and has a calm, welcoming expression. The background is dim, with a blurred massage table, a plant, and warm ambient lighting that creates a relaxing, spa-like atmosphere." loading="lazy" class="img-fluid rounded shadow-sm w-100"
+          alt="Entrance to the studio">
+      </div>
+
+      <div class="col-6">
+        <img src="./zdjecia/stol Large.jpeg" alt="A cozy, dimly lit massage room featuring a neatly prepared massage table with a light-colored sheet and rolled black towels. In the background, soft warm lighting from a lamp and candles creates a relaxing atmosphere, complemented by green plants and minimalist decor. A wall sign reading “Body Balance” adds a professional spa-like touch." loading="lazy" class="img-fluid rounded shadow-sm w-100" alt="Massage table">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="footer">
+
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <small>
+        Copyright © PaulinaBodyBalance by MotechaDev All rights reserved.
+      </small>
+    </div>
+  </footer>
+
+</section>
+
+
+
+
+<a href="https://www.sumupbookings.com/paulina-body-balance" id="floatingBookBtn" class="btn btn-outline-dark btn-sm">
+  Book Now
+</a>
+
+<div id="cookieBanner" class="cookie-banner">
+  <div class="cookie-content">
+    <p class="mb-2">
+      We use cookies to improve your experience and analyse traffic.
+      <a href="./policies.html" class="text-dark text-decoration-underline">Learn more</a>.
+    </p>
+    <div class="d-flex gap-2">
+      <button id="acceptCookies" class="btn btn-dark btn-sm">Accept</button>
+      <button id="declineCookies" class="btn btn-outline-dark btn-sm">Decline</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script>
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbar = document.querySelector('#navbarNavDropdown');
+
+      if (navbar.classList.contains('show')) {
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      }
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.querySelector('#cookieBanner');
+    const acceptBtn = document.getElementById("acceptCookies");
+    const declineBtn = document.getElementById("declineCookies");
+
+    if (!localStorage.getItem("cookieConsent")) {
+      setTimeout(() => {
+        banner.classList.add("show");
+      }, 500); // lekkie opóźnienie = bardziej premium
+    }
+
+    acceptBtn.addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", "accepted");
+      banner.classList.remove("show");
+    });
+
+    declineBtn.addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", "declined");
+      banner.classList.remove("show");
+    });
+  });
+</script>
+
+
+</body>
+
+
+
+</html>

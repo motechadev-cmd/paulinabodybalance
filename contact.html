@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Professional massage therapy in Leigh.">
+    <meta name="keywords" content="massage Leigh, massage therapy Leigh, body balance Leigh, therapeutic massage">
+    <meta name="author" content="Paulina Body Balance">
+
+    <title>PaulinaBodyBalance</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #B0A695;
+        font-family: montserrat, sans-serif;
+    }
+
+    @media (max-width: 992px) {
+        .navbar-nav {
+            margin-bottom: 1rem;
+        }
+
+        .d-flex.ms-auto {
+            margin-top: 0.5rem;
+            gap: 0.5rem;
+        }
+    }
+
+    .container-fluid {
+        background-color: #776B5D;
+        letter-spacing: 0.5px;
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: solid black 0.5px;
+         background-color: #776B5D;
+    }
+
+    .navbar-nav {
+        gap: 20px;
+        font-weight: 300;
+    }
+
+    .navbar-toggler {
+        border: 1px black solid;
+    }
+
+    .navbar-brand {
+        font-weight: 300;
+    }
+
+    .footer {
+        background-color: #776B5D;
+        color: #000000;
+        font-family: montserrat, sans-serif;
+        border-top: #000000 solid 0.5px;
+    }
+
+    .footer small {
+        font-weight: 300;
+    }
+
+
+    .btn {
+        color: #000000;
+    }
+
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .card-title {
+        font-family: montserrat, sans-serif;
+    }
+
+    .card-text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .card {
+        background-color: white;
+        border-color: black;
+    }
+
+    .card .btn {
+        background-color: #B0A695;
+        font-weight: 300;
+    }
+
+
+  .cookie-banner {
+  position: fixed;
+  bottom: 7px;
+  left: 20px;
+  z-index: 9999;
+
+  max-width: 180px;
+
+  background-color: #776B5D;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 15px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+
+  transition: all 0.5s ease;
+}
+
+
+.cookie-banner.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+    
+</style>
+
+</head>
+
+<body>
+
+    <section id="navbar">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-5" href="./index.html"><img src="./zdjecia/Screenshot 2026-04-01 at 22.45.16.png" loading="lazy"
+                        alt="brand logo" height="50px"> BodyBalance
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./pricelist.html">Price List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./policies.html">Policies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="d-flex ms-auto">
+                        <a href="https://www.facebook.com/share/1DF5J6XFyu/?mibextid=wwXIfr" class="nav-link px-2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+                        <a href="https://www.instagram.com/paulina.bodybalance?igsh=MXdjOXh3aTJ5dHlodw=="
+                            class="nav-link px-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                        <a href="https://www.youtube.com/@PaulinaBodyBalance" class="nav-link px-2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg></a>
+                        <a href="https://www.sumupbookings.com/paulina-body-balance?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAQ_i-JleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAadK6RB9rTRmH2lZrc0oTzoQ2_6StHvW2rk5gg-SJkxP5Drdole4mrzvIxY-vA_aem_P4KE82sFqJwKkHU8pSGgXg"
+                            class="btn btn-outline-dark btn-sm px-3 ms-lg-2 ms-auto">
+                            Book an appointment
+                        </a>
+
+                    </div>
+
+                    </br>
+
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    
+    <section class="py-5 mt-5" id="location">
+        <div class="container">
+    
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <h2>Contact</h2>
+                <p>Have a question or ready to book your session? Contact me today and take the first step toward better well-being.</p>
+            </div>
+    
+            <!-- Info -->
+            <div class="col-12 d-flex flex-column justify-content-center text-center">
+            
+                <h5>Get in Touch</h5>
+                <p>You can contact me directly via phone, email, or WhatsApp — whichever is most convenient for you. I understand that
+                everyone has different schedules, so I always try to be as flexible and accommodating as possible when arranging
+                appointments.</p>
+
+                <br>
+            
+                <!-- Address -->
+                <p class="mb-2">
+                    📍 12 Tennyson Ave, Leigh WN7 5LG
+                </p>
+            
+                <!-- Phone -->
+                <p class="mb-2">
+                    📞 <a href="tel:+447554665464" class="text-decoration-none">
+                        +44 7554665464
+                    </a>
+                </p>
+            
+                <!-- Email -->
+                <p class="mb-3">
+                    ✉️ <a href="mailto:bodybalance.info111@gmail.com" class="text-decoration-none">
+                        bodybalance.info111@gmail.com
+                    </a>
+                </p>
+            
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/447554665464" target="_blank" rel="noopener"
+                    class="btn btn-success btn-sm d-inline-flex align-items-center justify-content-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" width="18" height="18"
+                        alt="WhatsApp">
+                    Message on WhatsApp
+                </a>
+
+                <br>
+            
+            </div>
+    
+            <!-- Images at the bottom -->
+            <div class="row mt-3 g-3">
+                <div class="col-6">
+                    <img src="./zdjecia/wejscie Medium.jpeg" alt="A brick exterior entrance with a dark front door featuring decorative glass panels. Next to the door, a mounted sign reads “Body Balance Massage Therapy,” indicating the location of the practice. A small wall light fixture is installed above, and potted plants at the base add a welcoming, well-kept appearance." loading="lazy" class="img-fluid rounded shadow-sm w-100">
+                </div>
+    
+                <div class="col-6">
+                    <img src="./zdjecia/dyplomy Medium.jpeg" alt="A massage treatment room with a neatly prepared massage table and a supportive face cradle in the foreground. A modern curved lamp provides focused, warm lighting above the table. In the background, framed certificates are displayed on the wall, highlighting professional qualifications, while a device for heating oils or stones and a plant add to the calm, professional atmosphere." loading="lazy" class="img-fluid rounded shadow-sm w-100">
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <section>
+
+        <footer class="footer py-4">
+            <div class="container text-center">
+                <small>
+                    Copyright © PaulinaBodyBalance by MotechaDev All rights reserved.
+                </small>
+            </div>
+        </footer>
+
+    </section>
+
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p class="mb-2">
+                We use cookies to improve your experience and analyse traffic.
+                <a href="./policies.html" class="text-dark text-decoration-underline">Learn more</a>.
+            </p>
+            <div class="d-flex gap-2">
+                <button id="acceptCookies" class="btn btn-dark btn-sm">Accept</button>
+                <button id="declineCookies" class="btn btn-outline-dark btn-sm">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbar = document.querySelector('#navbarNavDropdown');
+
+                if (navbar.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbar, {
+                        toggle: false
+                    });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const banner = document.querySelector('#cookieBanner');
+            const acceptBtn = document.getElementById("acceptCookies");
+            const declineBtn = document.getElementById("declineCookies");
+
+            if (!localStorage.getItem("cookieConsent")) {
+                setTimeout(() => {
+                    banner.classList.add("show");
+                }, 500); // lekkie opóźnienie = bardziej premium
+            }
+
+            acceptBtn.addEventListener("click", function () {
+                localStorage.setItem("cookieConsent", "accepted");
+                banner.classList.remove("show");
+            });
+
+            declineBtn.addEventListener("click", function () {
+                localStorage.setItem("cookieConsent", "declined");
+                banner.classList.remove("show");
+            });
+        });
+    </script>
+    
+    
+</body>
+
+
+
+</html>
